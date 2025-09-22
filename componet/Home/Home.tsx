@@ -35,13 +35,13 @@ const Home = () => {
               Port<span className="text-xl mx-1">folio</span>
             </h1>
           </div>
-          <div className=" nav-link text-[#d1cfcf] flex justify-center items-center space-x-5  text-sm ">
+          {/* <div className=" nav-link text-[#d1cfcf] flex justify-center items-center space-x-5  text-sm ">
             <p>HOME</p>
             <p>ABOUT ME</p>
             <p>PROJECTS</p>
             <p>SKILLS</p>
             <p>CONTACT ME</p>
-          </div>
+          </div> */}
         </div>
         <a href="https://github.com/ayomikun286" target="_blank">
           <FontAwesomeIcon
