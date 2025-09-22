@@ -19,6 +19,7 @@ import { faWordpress } from "@fortawesome/free-brands-svg-icons/faWordpress";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ContactForm from "./form";
+import Footer from "./Footer";
 
 const Home = () => {
 
@@ -65,29 +66,30 @@ const Home = () => {
             className="  flex gap-2 md:gap-5 text-orange-600 text-5xl md:text-4xl my-5 justify-center  md:justify-start "
             style={{ filter: "drop-shadow(2px 2px 6px orangered)" }}
           >
-            <FontAwesomeIcon
+           <a href="https://www.linkedin.com/in/edegbai-ayomikun-oluwaseun/" target="_blank"> <FontAwesomeIcon
               icon={faLinkedinIn}
               className="hover:scale-120 transition duration-500 ease-in-out "
-            />
-            <FontAwesomeIcon
+            /></a>
+          <a  href="https://github.com/ayomikun286" target="_blank">  <FontAwesomeIcon
               icon={faGithub}
               className="hover:scale-120 transition duration-500 ease-in-out "
-            />
-            <FontAwesomeIcon
+            /></a>
+           <a  href="https://wa.me/2348116541869" target="_blank"> <FontAwesomeIcon
               icon={faWhatsapp}
               className="hover:scale-120 transition duration-500 ease-in-out "
-            />
-            <FontAwesomeIcon
+            /></a>
+           <a href="https://www.tiktok.com/@ayomikun3010" target="_blank"> <FontAwesomeIcon
               icon={faTiktok}
               className="hover:scale-120 transition duration-500 ease-in-out "
-            />
-            <FontAwesomeIcon
+            /></a>
+           <a href="mailto:edegbaiayomikun@gmail.com?subject=Project Inquiry&body=Hi Ayomikun, I’d like to work with you on..."
+          target="_blank"> <FontAwesomeIcon
               icon={faEnvelope}
               className="hover:scale-120 transition duration-500 ease-in-out "
-            />
+            /></a>
           </div>
           <div>
-            <a href="">
+            <a  href="resume/Resume.pdf" download="My-Resume.pdf">
               <button className="px-10 md:px-7 rounded-full  shadow-lg shadow-orange-500   py-2 md:py-2 text-sm bg-orange-600 hover:translate-y-[-5px] transition duration-500 ease-in-out ">
                 Download CV
               </button>
@@ -382,27 +384,10 @@ const Home = () => {
         </div>
       </div>
       <ContactForm/>
-      {/* < div className="mt-30 w-[100%]h-auto px-3 flex justify-center items-center " data-aos="fade-up"> 
-      <form action="https://formspree.io/f/xyzdbwwz" method="POST" className="w-[100%] bg-gray-400 max-w-150 px-5 py-8 md:px-5 rounded-xl flex flex-col justify-center items-center gap-5" >
-        <h1 className="text-center text-3xl text-black font-bold">Contact Me</h1>
-        <div>
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name " required/>
-        </div>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" required />
-        </div>
-        <div>
-          <label>Message</label>
-          <textarea></textarea>
-        </div>
-        <div>
-          < button className="bg-orange-600 rounded-xl h-15 text-white transition duration-500 ease-in-out hover:translate-y-[-3px] ">Send Message</button>
-        </div>
-
-      </form>
-      </div>   */}
+      <div>
+        <Footer/>
+      </div>
+ 
   </div>
   );
 };
